@@ -26,7 +26,10 @@ namespace CardioAnalisi
             {
                 Console.WriteLine("I tuoi battiti sono normali");
             }
-            if(ClassLibraryCardioAnalisi.Class1.)
+            if(ClassLibraryCardioAnalisi.Class1.Tachicardia(battitiminuto)==true)
+            {
+                Console.WriteLine("Sei tachicardico");
+            }
         }
     }
 }
