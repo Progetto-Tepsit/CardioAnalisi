@@ -50,9 +50,9 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\ClassLibraryCardioAnalisi\ClassLibraryCardioAnalisi.csproj">
+    <ProjectReference Include="..\ClassLibraryCardioAnalisi\ClassCardioAnalisi.csproj">
       <Project>{a543cd6e-cc54-4f0e-a0b7-bc9286d7bef8}</Project>
-      <Name>ClassLibraryCardioAnalisi</Name>
+      <Name>ClassCardioAnalisi</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

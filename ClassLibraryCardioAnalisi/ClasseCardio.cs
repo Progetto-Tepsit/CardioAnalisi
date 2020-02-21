@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ClassLibraryCardioAnalisi
+namespace ClassCardioAnalisi
 {
-    public class Class1
+    public class ClasseCardio
     {
         public static int Battitimin(int eta)
         {
@@ -47,6 +47,30 @@ namespace ClassLibraryCardioAnalisi
             }
             else
                 return false;
+        }
+        public static double CalorieUomo(int frequenza, int peso, int eta, int durata)
+        {
+            double calorie = ((eta * 0.2017) + (peso * 0.199) + (frequenza * 0.6309) - 55.0969) * durata / 4.184;
+            calorie = Math.Round(calorie, 0);
+            return calorie;
+        }
+        public static double CalorieDonna(int frequenza, int peso, int eta, int durata)
+        {
+            double calorie = ((eta * 0.074) - (peso * 0.126) + (frequenza * 0.4472) - 20.4022) * durata / 4.184;
+            calorie = Math.Round(calorie, 0);
+            return calorie;
+        }
+        public static double Corsa(int spazio,int peso)
+        {
+            double energia = 0.9 * spazio * peso;
+            energia = Math.Round(energia, 0);
+            return energia;
+        }
+        public static double Camminata(int spazio, int peso)
+        {
+            double energia = 0.5 * spazio * peso;
+            energia = Math.Round(energia, 0);
+            return energia;
         }
     }
 }

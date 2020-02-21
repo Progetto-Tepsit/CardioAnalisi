@@ -5,7 +5,7 @@ VisualStudioVersion = 16.0.29418.71
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CardioAnalisi", "CardioAnalisi\CardioAnalisi.csproj", "{1701B348-35EF-4013-B693-2C3581C3E9BC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClassLibraryCardioAnalisi", "ClassLibraryCardioAnalisi\ClassLibraryCardioAnalisi.csproj", "{A543CD6E-CC54-4F0E-A0B7-BC9286D7BEF8}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClassCardioAnalisi", "ClassLibraryCardioAnalisi\ClassCardioAnalisi.csproj", "{A543CD6E-CC54-4F0E-A0B7-BC9286D7BEF8}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CardioAnalisi.Test", "CardioAnalisi.Test\CardioAnalisi.Test.csproj", "{02C56F1E-6D04-4810-AD29-7C07A5D681C4}"
 EndProject
