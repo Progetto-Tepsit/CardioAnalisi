@@ -72,5 +72,19 @@ namespace ClassCardioAnalisi
             energia = Math.Round(energia, 0);
             return energia;
         }
+        public static List<double> MediaBattiti(int misurazioni)
+        {
+            List<double> valori = new List<double>();
+            int c = 0;
+            while(c!=misurazioni)
+            {
+                Console.WriteLine($"inserisci il valore della {c + 1} misurazione");
+                int valore = int.Parse(Console.ReadLine());
+                valori.Add(valore);
+                c++;
+            }
+            return valori;
+        }
     }
+
 }

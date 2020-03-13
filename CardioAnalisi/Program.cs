@@ -57,11 +57,23 @@ namespace CardioAnalisi
                 double metodo = ClassCardioAnalisi.ClasseCardio.Corsa(chilometri, peso);
                 Console.WriteLine($"la tua spesa energetica è pari a {metodo} joule");
             }
-            if(genere==2)
+            if(modo==2)
             {
                 double metodo = ClassCardioAnalisi.ClasseCardio.Camminata(chilometri, peso);
                 Console.WriteLine($"la tua spesa energetica è pari a {metodo} joule");
             }
+            Console.WriteLine("_____________________________________________________________________________________________________________________");
+            double somma = 0;
+            Console.WriteLine("quante misurazioni hai effettuato oggi?");
+            int misure = int.Parse(Console.ReadLine());
+            List<double> risultati = ClassCardioAnalisi.ClasseCardio.MediaBattiti(misure);
+            for(int i=0;i<risultati.Count;i++)
+            {
+                 somma = somma + risultati[i];
+            }
+            double media = somma / risultati.Count;
+            Console.WriteLine($"la tua media giornaliera è pari a {media}");
+
             Console.ReadLine();
         }
      
