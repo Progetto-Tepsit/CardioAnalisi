@@ -10,6 +10,7 @@ namespace CardioAnalisi
     {
         static void Main(string[] args)
         {
+          try  {
             Console.WriteLine("quanti anni hai?");
             int eta = int.Parse(Console.ReadLine());
             int percmin = ClassCardioAnalisi.ClasseCardio.Battitimin(eta);
@@ -73,9 +74,25 @@ namespace CardioAnalisi
             }
             double media = somma / risultati.Count;
             Console.WriteLine($"la tua media giornaliera è pari a {media}");
+             Console.WriteLine("_____________________________________________________________________________________________________________________");
+             Console.WriteLine("inserisci il valore della prima misurazione:");
+            int a=int.Parse(Console.ReadLine());
+             Console.WriteLine("inserisci il valore della seconda misurazione:");
+            int b=int.Parse(Console.ReadLine());
+            int var=ClassCardioAnalisi.ClasseCardio.Variazione(a,b);
+            Console.WriteLine($"la variazione è pari a {var}");
+
 
             Console.ReadLine();
+                }
+               catch(Exception ex)
+        {
+            Console.Write("PUOI INSERIRE SOLO VALORI NUMERICI INTERI!");
+        }
+
+        Console.ReadKey();
+                
         }
      
     }
-}
+    }
