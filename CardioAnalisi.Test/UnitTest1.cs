@@ -40,7 +40,7 @@ namespace CardioAnalisi.Test
             int battiti = 120;
             bool risultato = ClassCardioAnalisi.ClasseCardio.Tachicardia(battiti);
             Assert.AreEqual(risultatoaspettato, risultato);
-        }
+        } 
         public void TestCalorieUomo()
         {
             double risultatoaspettato = 60;
