@@ -18,15 +18,15 @@ namespace CardioAnalisi
             Console.WriteLine("_____________________________________________________________________________________________________________________");
             Console.WriteLine("quanti battiti al minuto fai a riposo?");
             int battitiminuto = int.Parse(Console.ReadLine());
-            if(ClassCardioAnalisi.ClasseCardio.Bradicardia(battitiminuto)==true)
+            if (ClassCardioAnalisi.ClasseCardio.Bradicardia(battitiminuto) == true)
             {
                 Console.WriteLine("Sei bradichardico");
             }
-            if(ClassCardioAnalisi.ClasseCardio.Normale(battitiminuto)==true)
+            if (ClassCardioAnalisi.ClasseCardio.Normale(battitiminuto) == true)
             {
                 Console.WriteLine("I tuoi battiti sono normali");
             }
-            if(ClassCardioAnalisi.ClasseCardio.Tachicardia(battitiminuto)==true)
+            if (ClassCardioAnalisi.ClasseCardio.Tachicardia(battitiminuto) == true)
             {
                 Console.WriteLine("Sei tachicardico");
             }
@@ -37,12 +37,12 @@ namespace CardioAnalisi
             int durata = int.Parse(Console.ReadLine());
             Console.WriteLine("se sei un uomo inserisci 1, se sei donna 2");
             int genere = int.Parse(Console.ReadLine());
-            if(genere==1)
+            if (genere == 1)
             {
-                double calorie = ClassCardioAnalisi.ClasseCardio.CalorieUomo(battitiminuto, peso, eta,durata);
+                double calorie = ClassCardioAnalisi.ClasseCardio.CalorieUomo(battitiminuto, peso, eta, durata);
                 Console.WriteLine($"durante questa sessione di allenamento hai bruciato {calorie} kilo-calorie");
             }
-            if(genere==2)
+            if (genere == 2)
             {
                 double calorie = ClassCardioAnalisi.ClasseCardio.CalorieDonna(battitiminuto, peso, eta, durata);
                 Console.WriteLine($"durante questa sessione di allenamento hai bruciato {calorie} kilo-calorie");
@@ -52,18 +52,18 @@ namespace CardioAnalisi
             int chilometri = int.Parse(Console.ReadLine());
             Console.WriteLine("se stavi correndo inserisci 1, se stavi camminando 2");
             int modo = int.Parse(Console.ReadLine());
-            if(modo==1)
+            if (modo == 1)
             {
                 double metodo = ClassCardioAnalisi.ClasseCardio.Corsa(chilometri, peso);
                 Console.WriteLine($"la tua spesa energetica è pari a {metodo} joule");
             }
-            if(genere==2)
+            if (modo == 2)
             {
                 double metodo = ClassCardioAnalisi.ClasseCardio.Camminata(chilometri, peso);
                 Console.WriteLine($"la tua spesa energetica è pari a {metodo} joule");
             }
             Console.ReadLine();
         }
-     
+
     }
 }
