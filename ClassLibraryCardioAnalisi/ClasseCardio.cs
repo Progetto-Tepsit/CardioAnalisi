@@ -88,9 +88,9 @@ namespace ClassCardioAnalisi
         public static int Variazione(int a, int b)
             {
          
-            int variazione=a-b;
-           variazione= Math.Abs(variazione);
-            return variazione;
+                int variazione=a-b;
+                variazione= Math.Abs(variazione);
+                return variazione;
             }
         
         }
